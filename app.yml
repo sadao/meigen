@@ -1,0 +1,21 @@
+application: ringio-meigen
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /mail/
+  script: main.py
+  login: admin
+
+- url: /mail/send/
+  script: main.py
+  login: admin
+
+- url: /delete/*
+  script: main.py
+  login: admin
+
+- url: /.*
+  script: main.py
+  login: admin

@@ -1,0 +1,5 @@
+cron:
+- description: fetch sendmail
+  url: /mail/send/
+  schedule: every 24 hours
+
